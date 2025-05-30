@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/81f652e334.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js" defer></script>
+
+    <title>Mein tolles Telefonbuch</title>
+  </head>
+  <body>
+    <main class="outter-wrapper">
+      <header>
+        <div class="header-container">
+          <h1>Mein tolles <span>Telefonbuch</span></h1>
+          <form id="kontakt-form">
+            <input type="text" placeholder="Name" id="name" required />
+            <input type="text" placeholder="Vorname" id="vorname" required />
+            <input type="tel" placeholder="Telefon" id="telefonnr" required />
+
+            <div class="farbe-aussuchen-container">
+              <input type="color" id="farbe" name="farbe" value="#9585ed" />
+              <label for="farbe">Wähle eine Farbe ✨</label>
+            </div>
+
+            <button type="submit" class="submit-btn" id="submit-btn">
+              <i class="fa-solid fa-plus"></i>
+              Kontakt hinzufügen
+            </button>
+          </form>
+        </div>
+        <div class="header-container">
+          <figure>
+            <img
+              <img
+              src="illustration.png"
+              alt="Illustration eines Mädchens, das verträumt vor einem Laptop sitzt"
+            />
+            <figcaption>Quelle: Freepik.com</figcaption>
+          </figure>
+        </div>
+      </header>
+
+      <section class="kontakte-overview" id="kontakte-overview">
+        <div>Anzahl meiner Kontakte:</div>
+        <div class="kontakte-anzahl" id="kontakte-anzahl"></div>
+      </section>
+
+      <section class="meine-kontakte" id="meine-kontakte">
+        <!-- wird alles mit JavaScript erzeugt 
+        <div class="ein-kontakt">
+          <div class="farbstreifen"></div>
+          <div class="daten-container">
+            <div class="erste-zeile">
+              <div><p>Vorname</p></div>
+              <div><p>Name</p></div>
+            </div>
+            <div class="zweite-zeile">
+              <i class="fa-solid fa-phone"></i>
+              <p>Telefonnummer</p>
+            </div>
+          </div>
+        </div>
+        -->
+      </section>
+
+      <section class="empty-state" id="empty-state">
+        <div class="empty-state-content">
+          <div class="empty-state-icons">
+            <i class="fa-solid fa-ghost"></i>
+            <i class="fa-solid fa-heart-crack"></i>
+            <i class="fa-solid fa-face-sad-tear"></i>
+          </div>
+          <p>Du hast keine Kontakte</p>
+          <iframe
+            width="420"
+            height="315"
+            src="https://www.youtube.com/embed/2oBXOOmEHa4?autoplay=1&mute=0"
+          >
+          </iframe>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,226 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  line-height: 1.4;
+}
+
+:root {
+  --border-radius: 0.5rem;
+}
+
+body {
+  background-color: rgb(232, 232, 232);
+  font-family: "Outfit", sans-serif;
+  color: rgb(46, 46, 48);
+  font-size: 1.1rem;
+}
+
+.outter-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Ab hier wird’s responsive für kleine Bildschirme */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+}
+
+header span {
+  color: rgb(186, 108, 228);
+}
+
+.header-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.header-container img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+figcaption {
+  font-size: 0.75rem;
+  color: rgb(94, 80, 171);
+  text-align: right;
+}
+
+.meine-kontakte {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+/* Ab hier wird’s responsive für kleine Bildschirme */
+@media (max-width: 600px) {
+  .meine-kontakte {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+.ein-kontakt {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  display: flex;
+  border-radius: var(--border-radius);
+  box-shadow: 0px 1px 12px rgba(3, 7, 18, 0.1);
+}
+
+.farbstreifen {
+  /* Farbe wird in JavaScript gesetzt*/
+  width: 1rem;
+  background-color: var(--irgendeine-farbe);
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+}
+
+.daten-container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.erste-zeile {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.zweite-zeile {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+input {
+  border-radius: 0.25rem;
+  border: 2px solid rgb(220, 220, 220);
+  font-family: "Outfit", sans-serif;
+}
+
+input:focus {
+  border-color: violet;
+  outline: none;
+}
+
+input[type="tel"],
+input[type="text"] {
+  padding: 0.5rem;
+  max-width: 300px;
+  font-family: monospace;
+}
+
+input::placeholder {
+  color: rgb(138, 154, 189);
+}
+
+input[type="color"] {
+  -webkit-appearance: none; /* Safari/Chrome Trick */
+  appearance: none;
+  aspect-ratio: 1 / 1;
+  height: 3rem;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.farbe-aussuchen-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+.submit-btn {
+  background-color: rgb(94, 80, 171);
+  color: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  align-self: flex-start;
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.submit-btn:hover {
+  background-color: rgb(139, 125, 146);
+  transform: scale(1.02);
+  transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+.kontakte-overview {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.kontakte-anzahl {
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(186, 108, 228);
+}
+
+.empty-state {
+  display: none;
+}
+
+.empty-state-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+  align-items: center;
+}
+
+.empty-state-icons {
+  color: rgb(186, 108, 228);
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.empty-state p {
+  color: rgb(138, 154, 189);
+  font-family: monospace;
+}
+
+iframe {
+  border-radius: 0.5rem;
+}
