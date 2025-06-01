@@ -2,7 +2,7 @@
 
 Ein kleines, liebevoll gebautes Web-Tool zur Verwaltung deiner Kontakte – ganz ohne Datenbank, Server oder Cloud. Einfach lokal, einfach charmant.
 
-![Screenshot](/cute_contacts.png)
+![Screenshot](assets/cute_contacts.png)
 
 ## 🧩 Was kann das Telefonbuch?
 
