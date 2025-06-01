@@ -20,7 +20,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 1rem;
+  padding: 4rem;
   margin: 0 auto;
   max-width: 900px;
 }
@@ -210,15 +210,14 @@ button {
 }
 
 .empty-state-icons {
-  color: rgb(186, 108, 228);
+  color: rgb(94, 80, 171);
   display: flex;
   gap: 0.5rem;
   justify-content: center;
 }
 
 .empty-state p {
-  color: rgb(138, 154, 189);
-  font-family: monospace;
+  color: rgb(94, 80, 171);
 }
 
 iframe {
