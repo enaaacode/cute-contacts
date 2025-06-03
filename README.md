@@ -1,22 +1,21 @@
-# 📞 Mein tolles Telefonbuch
+# ☎️ My Lovely Little Phonebook
 
-Ein kleines, liebevoll gebautes Web-Tool zur Verwaltung deiner Kontakte – ganz ohne Datenbank, Server oder Cloud. Einfach lokal, einfach charmant.
+A small web tool to manage your contacts. No database, no server, no cloud.  
+Just local, just charming.
 
 ![Screenshot](assets/cute_contacts.png)
 
-## 🧩 Was kann das Telefonbuch?
+## What can this phonebook do?
 
-- Kontakte hinzufügen: Vorname, Nachname, Telefonnummer & Wunschfarbe
-- Farbiger Farbstreifen zur visuellen Kennzeichnung
-- Kontakte werden im `localStorage` gespeichert und bleiben beim Neuladen erhalten
-- Responsives Layout (auch mobil gut nutzbar)
-- Leerzustand mit augenzwinkerndem YouTube-Video, wenn keine Kontakte vorhanden sind
+- Add contacts: first name, last name, phone number & custom color
+- Colored stripe for quick visual identification
+- Contacts are saved in `localStorage` and stay after reloading the page
+- Empty state when no contacts are available
 
-## ✨ Features im Detail
+## Features in detail
 
-- Kontaktformular mit HTML5-Validation
-- Farbwähler für individuelle Kontakt-Markierung
-- Illustration und Styling mit Liebe zum Detail
-- Zustandserkennung: keine Kontakte → `empty state`
-- Datenspeicherung im `localStorage`
-- Responsive & barrierearme Gestaltung mit Flex/Grid & semantischem HTML
+- Contact form with HTML5 validation
+- Color picker for individual contact marking
+- Thoughtful illustration and styling
+- Smart state detection: no contacts → `empty state`
+- Data stored locally via `localStorage`
